@@ -1,0 +1,226 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainBoi = Instance.new("Frame")
+local Frame = Instance.new("Frame")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local FeTab = Instance.new("TextButton")
+local nothinglisttttt = Instance.new("UIGridLayout")
+local VisualTab = Instance.new("TextButton")
+local AdminTab = Instance.new("TextButton")
+local SettingTab = Instance.new("TextButton")
+local Notes = Instance.new("Frame")
+local Notess = Instance.new("TextLabel")
+local FeTabb = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local UIGridLayout = Instance.new("UIGridLayout")
+local VisualTabb = Instance.new("Frame")
+local AdminTabb = Instance.new("Frame")
+local SettingTabb = Instance.new("Frame")
+local TROLOLOLOLO = Instance.new("TextLabel")
+local TROLOLOLOLOLO = Instance.new("TextLabel")
+local CLOSEGUI = Instance.new("TextButton")
+local TROLLBUTTON = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainBoi.Name = "MainBoi"
+MainBoi.Parent = ScreenGui
+MainBoi.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainBoi.Position = UDim2.new(0.216236725, 0, 0.238955826, 0)
+MainBoi.Size = UDim2.new(0, 655, 0, 37)
+
+Frame.Name = "Frame.."
+Frame.Parent = MainBoi
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(-0.000557237014, 0, 0.988928676, 0)
+Frame.Size = UDim2.new(0, 655, 0, 263)
+
+ScrollingFrame.Parent = Frame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.Position = UDim2.new(0, 0, 0.0988593176, 0)
+ScrollingFrame.Size = UDim2.new(0, 179, 0, 201)
+
+FeTab.Name = "Fe Tab"
+FeTab.Parent = ScrollingFrame
+FeTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FeTab.Size = UDim2.new(0, 116, 0, 100)
+FeTab.Font = Enum.Font.SourceSans
+FeTab.Text = "Fe Tab"
+FeTab.TextColor3 = Color3.fromRGB(0, 0, 0)
+FeTab.TextSize = 14.000
+
+nothinglisttttt.Name = "nothing listtttt"
+nothinglisttttt.Parent = ScrollingFrame
+nothinglisttttt.SortOrder = Enum.SortOrder.LayoutOrder
+nothinglisttttt.CellSize = UDim2.new(0, 165, 0, 50)
+
+VisualTab.Name = "Visual Tab"
+VisualTab.Parent = ScrollingFrame
+VisualTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VisualTab.Size = UDim2.new(0, 116, 0, 100)
+VisualTab.Font = Enum.Font.SourceSans
+VisualTab.Text = "Visual Tab"
+VisualTab.TextColor3 = Color3.fromRGB(0, 0, 0)
+VisualTab.TextSize = 14.000
+
+AdminTab.Name = "Admin Tab"
+AdminTab.Parent = ScrollingFrame
+AdminTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AdminTab.Size = UDim2.new(0, 116, 0, 100)
+AdminTab.Font = Enum.Font.SourceSans
+AdminTab.Text = "Admin Tab"
+AdminTab.TextColor3 = Color3.fromRGB(0, 0, 0)
+AdminTab.TextSize = 14.000
+
+SettingTab.Name = "Setting Tab"
+SettingTab.Parent = ScrollingFrame
+SettingTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SettingTab.Size = UDim2.new(0, 116, 0, 100)
+SettingTab.Font = Enum.Font.SourceSans
+SettingTab.Text = "Setting Tab"
+SettingTab.TextColor3 = Color3.fromRGB(0, 0, 0)
+SettingTab.TextSize = 14.000
+
+Notes.Name = "Notes"
+Notes.Parent = Frame
+Notes.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Notes.Position = UDim2.new(0.296183199, 0, 0.0988593176, 0)
+Notes.Size = UDim2.new(0, 449, 0, 201)
+Notes.Visible = false
+
+Notess.Name = "Notess"
+Notess.Parent = Notes
+Notess.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Notess.Position = UDim2.new(0.05790646, 0, 0.0845771134, 0)
+Notess.Size = UDim2.new(0, 399, 0, 154)
+Notess.Font = Enum.Font.SourceSans
+Notess.Text = "Welcome to Troll Gui yes yes"
+Notess.TextColor3 = Color3.fromRGB(0, 0, 0)
+Notess.TextScaled = true
+Notess.TextSize = 14.000
+Notess.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Notess.TextWrapped = true
+
+FeTabb.Name = "Fe Tabb"
+FeTabb.Parent = Frame
+FeTabb.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FeTabb.Position = UDim2.new(0.296183199, 0, 0.0988593176, 0)
+FeTabb.Size = UDim2.new(0, 449, 0, 201)
+
+TextButton.Parent = FeTabb
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Gale Fighter"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+UIGridLayout.Parent = FeTabb
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellSize = UDim2.new(0, 100, 0, 50)
+
+VisualTabb.Name = "Visual Tabb"
+VisualTabb.Parent = Frame
+VisualTabb.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VisualTabb.Position = UDim2.new(0.296183199, 0, 0.0988593176, 0)
+VisualTabb.Size = UDim2.new(0, 449, 0, 201)
+VisualTabb.Visible = false
+
+AdminTabb.Name = "Admin Tabb"
+AdminTabb.Parent = Frame
+AdminTabb.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AdminTabb.Position = UDim2.new(0.296183199, 0, 0.0988593176, 0)
+AdminTabb.Size = UDim2.new(0, 449, 0, 201)
+AdminTabb.Visible = false
+
+SettingTabb.Name = "Setting Tabb"
+SettingTabb.Parent = Frame
+SettingTabb.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SettingTabb.Position = UDim2.new(0.296183199, 0, 0.0988593176, 0)
+SettingTabb.Size = UDim2.new(0, 449, 0, 201)
+SettingTabb.Visible = false
+
+TROLOLOLOLO.Name = "TROLOLOLOLO"
+TROLOLOLOLO.Parent = MainBoi
+TROLOLOLOLO.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TROLOLOLOLO.Position = UDim2.new(0, 0, 0.0270270277, 0)
+TROLOLOLOLO.Size = UDim2.new(0, 178, 0, 36)
+TROLOLOLOLO.Font = Enum.Font.SourceSans
+TROLOLOLOLO.Text = "Troll Gui"
+TROLOLOLOLO.TextColor3 = Color3.fromRGB(0, 0, 0)
+TROLOLOLOLO.TextSize = 14.000
+
+TROLOLOLOLOLO.Name = "TROLOLOLOLOLO"
+TROLOLOLOLOLO.Parent = MainBoi
+TROLOLOLOLOLO.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TROLOLOLOLOLO.Position = UDim2.new(0.273282439, 0, 0.594594598, 0)
+TROLOLOLOLOLO.Size = UDim2.new(0, 99, 0, 15)
+TROLOLOLOLOLO.Font = Enum.Font.SourceSans
+TROLOLOLOLOLO.Text = "Made By: xxsfytd"
+TROLOLOLOLOLO.TextColor3 = Color3.fromRGB(0, 0, 0)
+TROLOLOLOLOLO.TextSize = 14.000
+
+CLOSEGUI.Name = "CLOSEGUI"
+CLOSEGUI.Parent = MainBoi
+CLOSEGUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CLOSEGUI.Position = UDim2.new(0.893129706, 0, 0.135135129, 0)
+CLOSEGUI.Size = UDim2.new(0, 64, 0, 26)
+CLOSEGUI.Font = Enum.Font.SourceSans
+CLOSEGUI.Text = "Close Gui"
+CLOSEGUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+CLOSEGUI.TextSize = 14.000
+
+TROLLBUTTON.Name = "TROLLBUTTON"
+TROLLBUTTON.Parent = ScreenGui
+TROLLBUTTON.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TROLLBUTTON.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TROLLBUTTON.Position = UDim2.new(0.960707307, 0, 0.917670786, 0)
+TROLLBUTTON.Size = UDim2.new(0, 39, 0, 40)
+TROLLBUTTON.Image = "http://www.roblox.com/asset/?id=10693327318"
+
+UICorner.Parent = TROLLBUTTON
+
+-- Scripts:
+
+local function HHGCO_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('https://pastefy.ga/w08T3Ib1/raw'),true))() -- Gale fighter
+	end)
+end
+coroutine.wrap(HHGCO_fake_script)()
+local function YOAVKL_fake_script() -- CLOSEGUI.LocalScript 
+	local script = Instance.new('LocalScript', CLOSEGUI)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.MainBoi.Visible = false
+		script.Parent.Parent.Parent.TROLLBUTTON.Visible = true
+	end)
+end
+coroutine.wrap(YOAVKL_fake_script)()
+local function ZUNPO_fake_script() -- MainBoi.LocalScript 
+	local script = Instance.new('LocalScript', MainBoi)
+
+	script.Parent.Draggable = true
+	script.Parent.Active = true
+end
+coroutine.wrap(ZUNPO_fake_script)()
+local function LVWI_fake_script() -- TROLLBUTTON.LocalScript 
+	local script = Instance.new('LocalScript', TROLLBUTTON)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.MainBoi.Visible = true
+		script.Parent.Parent.TROLLBUTTON.Visible = false
+	end)
+end
+coroutine.wrap(LVWI_fake_script)()
