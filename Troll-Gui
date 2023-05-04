@@ -14,12 +14,12 @@ local AdminTab = Instance.new("TextButton")
 local SettingTab = Instance.new("TextButton")
 local Notes = Instance.new("Frame")
 local Notess = Instance.new("TextLabel")
-local FeTabb = Instance.new("Frame")
+local Fe = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
 local UIGridLayout = Instance.new("UIGridLayout")
-local VisualTabb = Instance.new("Frame")
-local AdminTabb = Instance.new("Frame")
-local SettingTabb = Instance.new("Frame")
+local Visual = Instance.new("Frame")
+local Admin = Instance.new("Frame")
+local Setting = Instance.new("Frame")
 local TROLOLOLOLO = Instance.new("TextLabel")
 local TROLOLOLOLOLO = Instance.new("TextLabel")
 local CLOSEGUI = Instance.new("TextButton")
@@ -36,6 +36,7 @@ MainBoi.Parent = ScreenGui
 MainBoi.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 MainBoi.Position = UDim2.new(0.216236725, 0, 0.238955826, 0)
 MainBoi.Size = UDim2.new(0, 655, 0, 37)
+MainBoi.Visible = false
 
 Frame.Name = "Frame.."
 Frame.Parent = MainBoi
@@ -110,13 +111,14 @@ Notess.TextSize = 14.000
 Notess.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 Notess.TextWrapped = true
 
-FeTabb.Name = "Fe Tabb"
-FeTabb.Parent = Frame
-FeTabb.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-FeTabb.Position = UDim2.new(0.296183199, 0, 0.0988593176, 0)
-FeTabb.Size = UDim2.new(0, 449, 0, 201)
+Fe.Name = "Fe"
+Fe.Parent = Frame
+Fe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fe.Position = UDim2.new(0.296183199, 0, 0.0988593176, 0)
+Fe.Size = UDim2.new(0, 449, 0, 201)
+Fe.Visible = false
 
-TextButton.Parent = FeTabb
+TextButton.Parent = Fe
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.Size = UDim2.new(0, 200, 0, 50)
 TextButton.Font = Enum.Font.SourceSans
@@ -124,30 +126,30 @@ TextButton.Text = "Gale Fighter"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 14.000
 
-UIGridLayout.Parent = FeTabb
+UIGridLayout.Parent = Fe
 UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
 UIGridLayout.CellSize = UDim2.new(0, 100, 0, 50)
 
-VisualTabb.Name = "Visual Tabb"
-VisualTabb.Parent = Frame
-VisualTabb.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-VisualTabb.Position = UDim2.new(0.296183199, 0, 0.0988593176, 0)
-VisualTabb.Size = UDim2.new(0, 449, 0, 201)
-VisualTabb.Visible = false
+Visual.Name = "Visual"
+Visual.Parent = Frame
+Visual.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Visual.Position = UDim2.new(0.296183199, 0, 0.0988593176, 0)
+Visual.Size = UDim2.new(0, 449, 0, 201)
+Visual.Visible = false
 
-AdminTabb.Name = "Admin Tabb"
-AdminTabb.Parent = Frame
-AdminTabb.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AdminTabb.Position = UDim2.new(0.296183199, 0, 0.0988593176, 0)
-AdminTabb.Size = UDim2.new(0, 449, 0, 201)
-AdminTabb.Visible = false
+Admin.Name = "Admin"
+Admin.Parent = Frame
+Admin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Admin.Position = UDim2.new(0.296183199, 0, 0.0988593176, 0)
+Admin.Size = UDim2.new(0, 449, 0, 201)
+Admin.Visible = false
 
-SettingTabb.Name = "Setting Tabb"
-SettingTabb.Parent = Frame
-SettingTabb.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SettingTabb.Position = UDim2.new(0.296183199, 0, 0.0988593176, 0)
-SettingTabb.Size = UDim2.new(0, 449, 0, 201)
-SettingTabb.Visible = false
+Setting.Name = "Setting"
+Setting.Parent = Frame
+Setting.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting.Position = UDim2.new(0.296183199, 0, 0.0988593176, 0)
+Setting.Size = UDim2.new(0, 449, 0, 201)
+Setting.Visible = false
 
 TROLOLOLOLO.Name = "TROLOLOLOLO"
 TROLOLOLOLO.Parent = MainBoi
@@ -191,15 +193,63 @@ UICorner.Parent = TROLLBUTTON
 
 -- Scripts:
 
-local function HHGCO_fake_script() -- TextButton.LocalScript 
+local function LFFWPE_fake_script() -- FeTab.LocalScript 
+	local script = Instance.new('LocalScript', FeTab)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Admin.Visible = false
+		script.Parent.Parent.Parent.Fe.Visible = true
+		script.Parent.Parent.Parent.Setting.Visible = false
+		script.Parent.Parent.Parent.Visual.Visible = false
+		script.Parent.Parent.Parent.Notes.Visible = false
+	end)
+end
+coroutine.wrap(LFFWPE_fake_script)()
+local function DRVXE_fake_script() -- VisualTab.LocalScript 
+	local script = Instance.new('LocalScript', VisualTab)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Admin.Visible = false
+		script.Parent.Parent.Parent.Fe.Visible = false
+		script.Parent.Parent.Parent.Setting.Visible = false
+		script.Parent.Parent.Parent.Visual.Visible = true
+		script.Parent.Parent.Parent.Notes.Visible = false
+	end)
+end
+coroutine.wrap(DRVXE_fake_script)()
+local function DKFH_fake_script() -- AdminTab.LocalScript 
+	local script = Instance.new('LocalScript', AdminTab)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Admin.Visible = true
+		script.Parent.Parent.Parent.Fe = false
+		script.Parent.Parent.Parent.Setting = false
+		script.Parent.Parent.Parent.Visual = false
+		script.Parent.Parent.Parent.Notes = false
+	end)
+end
+coroutine.wrap(DKFH_fake_script)()
+local function QBEZZH_fake_script() -- SettingTab.LocalScript 
+	local script = Instance.new('LocalScript', SettingTab)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Admin.Visible = false
+		script.Parent.Parent.Parent.Fe.Visible = false
+		script.Parent.Parent.Parent.Setting.Visible = true
+		script.Parent.Parent.Parent.Visual.Visible = false
+		script.Parent.Parent.Parent.Notes.Visible = false
+	end)
+end
+coroutine.wrap(QBEZZH_fake_script)()
+local function NAMIJ_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet(('https://pastefy.ga/w08T3Ib1/raw'),true))() -- Gale fighter
 	end)
 end
-coroutine.wrap(HHGCO_fake_script)()
-local function YOAVKL_fake_script() -- CLOSEGUI.LocalScript 
+coroutine.wrap(NAMIJ_fake_script)()
+local function VCAWAY_fake_script() -- CLOSEGUI.LocalScript 
 	local script = Instance.new('LocalScript', CLOSEGUI)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -207,15 +257,15 @@ local function YOAVKL_fake_script() -- CLOSEGUI.LocalScript
 		script.Parent.Parent.Parent.TROLLBUTTON.Visible = true
 	end)
 end
-coroutine.wrap(YOAVKL_fake_script)()
-local function ZUNPO_fake_script() -- MainBoi.LocalScript 
+coroutine.wrap(VCAWAY_fake_script)()
+local function OPBYJX_fake_script() -- MainBoi.LocalScript 
 	local script = Instance.new('LocalScript', MainBoi)
 
 	script.Parent.Draggable = true
 	script.Parent.Active = true
 end
-coroutine.wrap(ZUNPO_fake_script)()
-local function LVWI_fake_script() -- TROLLBUTTON.LocalScript 
+coroutine.wrap(OPBYJX_fake_script)()
+local function ZOSZUW_fake_script() -- TROLLBUTTON.LocalScript 
 	local script = Instance.new('LocalScript', TROLLBUTTON)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -223,4 +273,10 @@ local function LVWI_fake_script() -- TROLLBUTTON.LocalScript
 		script.Parent.Parent.TROLLBUTTON.Visible = false
 	end)
 end
-coroutine.wrap(LVWI_fake_script)()
+coroutine.wrap(ZOSZUW_fake_script)()
+local function YUDS_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	script.Parent.ResetOnSpawn = false
+end
+coroutine.wrap(YUDS_fake_script)()
