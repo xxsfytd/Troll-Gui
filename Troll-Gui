@@ -28,9 +28,9 @@ local UIGridLayout_5 = Instance.new("UIGridLayout")
 local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
 local HatsRequired = Instance.new("ScrollingFrame")
-local ForPhyschopathAxe = Instance.new("TextBox")
 local UIGridLayout_6 = Instance.new("UIGridLayout")
-local ForGaleFighter = Instance.new("TextBox")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
 local TROLOLOLOLO = Instance.new("TextLabel")
 local TROLOLOLOLOLO = Instance.new("TextLabel")
 local CLOSEGUI = Instance.new("TextButton")
@@ -69,7 +69,9 @@ FeTab.Size = UDim2.new(0, 116, 0, 100)
 FeTab.Font = Enum.Font.SourceSans
 FeTab.Text = "Fe Tab"
 FeTab.TextColor3 = Color3.fromRGB(0, 0, 0)
+FeTab.TextScaled = true
 FeTab.TextSize = 14.000
+FeTab.TextWrapped = true
 
 nothinglisttttt.Name = "nothing listtttt"
 nothinglisttttt.Parent = BUTTONS
@@ -83,7 +85,9 @@ VisualTab.Size = UDim2.new(0, 116, 0, 100)
 VisualTab.Font = Enum.Font.SourceSans
 VisualTab.Text = "Visual Tab"
 VisualTab.TextColor3 = Color3.fromRGB(0, 0, 0)
+VisualTab.TextScaled = true
 VisualTab.TextSize = 14.000
+VisualTab.TextWrapped = true
 
 AdminTab.Name = "Admin Tab"
 AdminTab.Parent = BUTTONS
@@ -92,7 +96,9 @@ AdminTab.Size = UDim2.new(0, 116, 0, 100)
 AdminTab.Font = Enum.Font.SourceSans
 AdminTab.Text = "Admin Tab"
 AdminTab.TextColor3 = Color3.fromRGB(0, 0, 0)
+AdminTab.TextScaled = true
 AdminTab.TextSize = 14.000
+AdminTab.TextWrapped = true
 
 SettingTab.Name = "Setting Tab"
 SettingTab.Parent = BUTTONS
@@ -101,16 +107,20 @@ SettingTab.Size = UDim2.new(0, 116, 0, 100)
 SettingTab.Font = Enum.Font.SourceSans
 SettingTab.Text = "Setting Tab"
 SettingTab.TextColor3 = Color3.fromRGB(0, 0, 0)
+SettingTab.TextScaled = true
 SettingTab.TextSize = 14.000
+SettingTab.TextWrapped = true
 
 HatsTab.Name = "Hats Tab"
 HatsTab.Parent = BUTTONS
 HatsTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 HatsTab.Size = UDim2.new(0, 116, 0, 100)
 HatsTab.Font = Enum.Font.SourceSans
-HatsTab.Text = "Hats Requirement (For Fe)"
+HatsTab.Text = "Hats Requirement (For Fe all free hats)"
 HatsTab.TextColor3 = Color3.fromRGB(0, 0, 0)
+HatsTab.TextScaled = true
 HatsTab.TextSize = 14.000
+HatsTab.TextWrapped = true
 
 Fe.Name = "Fe"
 Fe.Parent = Frame
@@ -192,6 +202,7 @@ Notes.Active = true
 Notes.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Notes.Position = UDim2.new(0.297709912, 0, 0.0988593176, 0)
 Notes.Size = UDim2.new(0, 446, 0, 201)
+Notes.Visible = false
 Notes.CanvasSize = UDim2.new(0, 0, 5, 0)
 
 UIGridLayout_5.Parent = Notes
@@ -224,37 +235,34 @@ HatsRequired.Active = true
 HatsRequired.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 HatsRequired.Position = UDim2.new(0.297709912, 0, 0.0988593176, 0)
 HatsRequired.Size = UDim2.new(0, 446, 0, 201)
-HatsRequired.Visible = false
 HatsRequired.CanvasSize = UDim2.new(0, 0, 5, 0)
-
-ForPhyschopathAxe.Name = "ForPhyschopathAxe"
-ForPhyschopathAxe.Parent = HatsRequired
-ForPhyschopathAxe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ForPhyschopathAxe.Position = UDim2.new(-0.482062787, 0, -0.106463879, 0)
-ForPhyschopathAxe.Size = UDim2.new(0, 432, 0, 150)
-ForPhyschopathAxe.ClearTextOnFocus = false
-ForPhyschopathAxe.Font = Enum.Font.SourceSans
-ForPhyschopathAxe.Text = "Physchopath Axe: https://www.roblox.com/catalog/48474294/ROBLOX-Girl-Hair\\n\\nhttps://www.roblox.com/catalog/62724852/Chestnut-Bun\\n\\nhttps://www.roblox.com/catalog/451220849/Lavender-Updo\\n\\nhttps://www.roblox.com/catalog/4584042059/International-Fedora-Netherlands\\n\\nhttps://www.roblox.com/catalog/3409612660/International-Fedora-USA\\n\\nhttps://www.roblox.com/catalog/48474313/Red-Roblox-Cap\\n\\nhttps://www.roblox.com/catalog/12666716206/Golden-Apple\\n\\nhttps://www.roblox.com/catalog/9867487176/Le-Rouge-Cross-body-Bag-3-0\\n\\nhttps://www.roblox.com/catalog/12583828426/Pink-Cat-Ear-Headphones\\n\\nhttps://www.roblox.com/catalog/12103236257/AO-Surfboard\\n\\n"
-ForPhyschopathAxe.TextColor3 = Color3.fromRGB(0, 0, 0)
-ForPhyschopathAxe.TextSize = 14.000
-ForPhyschopathAxe.TextWrapped = true
 
 UIGridLayout_6.Parent = HatsRequired
 UIGridLayout_6.SortOrder = Enum.SortOrder.LayoutOrder
 UIGridLayout_6.CellPadding = UDim2.new(0, 1, 0, 5)
-UIGridLayout_6.CellSize = UDim2.new(0, 432, 0, 500)
+UIGridLayout_6.CellSize = UDim2.new(0, 432, 0, 100)
 
-ForGaleFighter.Name = "ForGaleFighter"
-ForGaleFighter.Parent = HatsRequired
-ForGaleFighter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ForGaleFighter.Position = UDim2.new(-0.632286966, 0, -0.0608365014, 0)
-ForGaleFighter.Size = UDim2.new(0, 432, 0, 150)
-ForGaleFighter.ClearTextOnFocus = false
-ForGaleFighter.Font = Enum.Font.SourceSans
-ForGaleFighter.Text = "Gale Fighter: https://www.roblox.com/catalog/376527115/Jade-Necklace-with-Shell-Pendant\\n \\nhttps://www.roblox.com/catalog/63690008/Pal-Hair\\n \\nhttps://www.roblox.com/catalog/48474313/Red-Roblox-Cap\\n "
-ForGaleFighter.TextColor3 = Color3.fromRGB(0, 0, 0)
-ForGaleFighter.TextSize = 14.000
-ForGaleFighter.TextWrapped = true
+TextLabel_3.Parent = HatsRequired
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Gale Fighter: Pal-Hair, Jade-Necklace-with-Shell-Pendant, Red-Roblox-Cap."
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+TextLabel_3.TextYAlignment = Enum.TextYAlignment.Top
+
+TextLabel_4.Parent = HatsRequired
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Physchopath Of Axe: Red-Roblox-Cap, Chestnut-Bun, Classic-PC-Hat, Lavender-Updo, ROBLOX-Girl-Hair, Vans-Black-White-Checkerboard-Umbrella, Slasher. "
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+TextLabel_4.TextYAlignment = Enum.TextYAlignment.Top
 
 TROLOLOLOLO.Name = "TROLOLOLOLO"
 TROLOLOLOLO.Parent = MainBoi
@@ -284,7 +292,9 @@ CLOSEGUI.Size = UDim2.new(0, 64, 0, 26)
 CLOSEGUI.Font = Enum.Font.SourceSans
 CLOSEGUI.Text = "Close Gui"
 CLOSEGUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+CLOSEGUI.TextScaled = true
 CLOSEGUI.TextSize = 14.000
+CLOSEGUI.TextWrapped = true
 
 TROLLBUTTON.Name = "TROLLBUTTON"
 TROLLBUTTON.Parent = ScreenGui
@@ -298,7 +308,7 @@ UICorner.Parent = TROLLBUTTON
 
 -- Scripts:
 
-local function WTKKNW_fake_script() -- FeTab.LocalScript 
+local function YANRIA_fake_script() -- FeTab.LocalScript 
 	local script = Instance.new('LocalScript', FeTab)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -310,8 +320,8 @@ local function WTKKNW_fake_script() -- FeTab.LocalScript
 		script.Parent.Parent.Parent.HatsRequired.Visible = false
 	end)
 end
-coroutine.wrap(WTKKNW_fake_script)()
-local function IFET_fake_script() -- VisualTab.LocalScript 
+coroutine.wrap(YANRIA_fake_script)()
+local function VQNDJ_fake_script() -- VisualTab.LocalScript 
 	local script = Instance.new('LocalScript', VisualTab)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -323,8 +333,8 @@ local function IFET_fake_script() -- VisualTab.LocalScript
 		script.Parent.Parent.Parent.HatsRequired.Visible = false
 	end)
 end
-coroutine.wrap(IFET_fake_script)()
-local function ZLGDAQ_fake_script() -- AdminTab.LocalScript 
+coroutine.wrap(VQNDJ_fake_script)()
+local function PEPF_fake_script() -- AdminTab.LocalScript 
 	local script = Instance.new('LocalScript', AdminTab)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -336,8 +346,8 @@ local function ZLGDAQ_fake_script() -- AdminTab.LocalScript
 		script.Parent.Parent.Parent.HatsRequired.Visible = false
 	end)
 end
-coroutine.wrap(ZLGDAQ_fake_script)()
-local function XXNM_fake_script() -- SettingTab.LocalScript 
+coroutine.wrap(PEPF_fake_script)()
+local function OQJXLUO_fake_script() -- SettingTab.LocalScript 
 	local script = Instance.new('LocalScript', SettingTab)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -349,8 +359,8 @@ local function XXNM_fake_script() -- SettingTab.LocalScript
 		script.Parent.Parent.Parent.HatsRequired.Visible = false
 	end)
 end
-coroutine.wrap(XXNM_fake_script)()
-local function SQORBR_fake_script() -- HatsTab.LocalScript 
+coroutine.wrap(OQJXLUO_fake_script)()
+local function QAROTTD_fake_script() -- HatsTab.LocalScript 
 	local script = Instance.new('LocalScript', HatsTab)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -362,24 +372,24 @@ local function SQORBR_fake_script() -- HatsTab.LocalScript
 		script.Parent.Parent.Parent.HatsRequired.Visible = true
 	end)
 end
-coroutine.wrap(SQORBR_fake_script)()
-local function UEPFQ_fake_script() -- PhyschopathAxe.LocalScript 
+coroutine.wrap(QAROTTD_fake_script)()
+local function PHFNK_fake_script() -- PhyschopathAxe.LocalScript 
 	local script = Instance.new('LocalScript', PhyschopathAxe)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet(('https://pastebin.com/raw/EbBZ0vsC'),true))() -- Physchopath Axe
+		loadstring(game:HttpGet('https://pastebin.com/raw/94rj33js'))() -- Physchopath Axe
 	end)
 end
-coroutine.wrap(UEPFQ_fake_script)()
-local function ZXNHYTC_fake_script() -- GaleFighter.LocalScript 
+coroutine.wrap(PHFNK_fake_script)()
+local function TGBJJO_fake_script() -- GaleFighter.LocalScript 
 	local script = Instance.new('LocalScript', GaleFighter)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet(('https://pastefy.ga/w08T3Ib1/raw'),true))() -- Gale Fighter
 	end)
 end
-coroutine.wrap(ZXNHYTC_fake_script)()
-local function SXYC_fake_script() -- CLOSEGUI.LocalScript 
+coroutine.wrap(TGBJJO_fake_script)()
+local function PSHYGS_fake_script() -- CLOSEGUI.LocalScript 
 	local script = Instance.new('LocalScript', CLOSEGUI)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -387,15 +397,15 @@ local function SXYC_fake_script() -- CLOSEGUI.LocalScript
 		script.Parent.Parent.Parent.TROLLBUTTON.Visible = true
 	end)
 end
-coroutine.wrap(SXYC_fake_script)()
-local function LDRLJ_fake_script() -- MainBoi.LocalScript 
+coroutine.wrap(PSHYGS_fake_script)()
+local function CCRDMI_fake_script() -- MainBoi.LocalScript 
 	local script = Instance.new('LocalScript', MainBoi)
 
 	script.Parent.Draggable = true
 	script.Parent.Active = true
 end
-coroutine.wrap(LDRLJ_fake_script)()
-local function XQSENIV_fake_script() -- TROLLBUTTON.LocalScript 
+coroutine.wrap(CCRDMI_fake_script)()
+local function ETWHD_fake_script() -- TROLLBUTTON.LocalScript 
 	local script = Instance.new('LocalScript', TROLLBUTTON)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -403,10 +413,10 @@ local function XQSENIV_fake_script() -- TROLLBUTTON.LocalScript
 		script.Parent.Parent.TROLLBUTTON.Visible = false
 	end)
 end
-coroutine.wrap(XQSENIV_fake_script)()
-local function XDRJ_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(ETWHD_fake_script)()
+local function RVFKE_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	script.Parent.ResetOnSpawn = false
 end
-coroutine.wrap(XDRJ_fake_script)()
+coroutine.wrap(RVFKE_fake_script)()
